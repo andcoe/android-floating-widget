@@ -24,8 +24,8 @@ class FloatingWidgetView : ConstraintLayout, View.OnTouchListener {
         PixelFormat.TRANSLUCENT
     )
 
-    private var x: Int = 100
-    private var y: Int = 100
+    private var x: Int = 0
+    private var y: Int = 0
     private var touchX: Float = 0f
     private var touchY: Float = 0f
     private var clickStartTimer: Long = 0
@@ -35,7 +35,6 @@ class FloatingWidgetView : ConstraintLayout, View.OnTouchListener {
         View.inflate(context, R.layout.floating_widget_layout, this)
         setOnTouchListener(this)
 
-        layoutParams.gravity = Gravity.TOP
         layoutParams.x = x
         layoutParams.y = y
 
