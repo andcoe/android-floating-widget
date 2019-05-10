@@ -3,7 +3,6 @@ package org.andcoe.floatingwidget
 import android.content.Context
 import android.graphics.PixelFormat
 import android.util.AttributeSet
-import android.view.Gravity
 import android.view.MotionEvent
 import android.view.View
 import android.view.WindowManager
